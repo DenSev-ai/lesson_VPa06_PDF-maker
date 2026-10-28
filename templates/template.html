@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чек {{invoice_id}}</title>
+</head>
+<body>
+    <div class="invoice-box">
+        <h1>Товарный чек № {{invoice_id}}</h1>
+
+        <p><strong>Дата:</strong> {{date}}</p>
+        <p><strong>Клиент:</strong> {{client}}</p>
+
+        <table class="details">
+            <thead>
+                <tr>
+                    <th>Поле</th>
+                    <th>Значение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Товар</td>
+                    <td>{{product}}</td>
+                </tr>
+                <tr>
+                    <td>Цена</td>
+                    <td>{{price}} ₽</td>
+                </tr>
+                <tr>
+                    <td>Количество</td>
+                    <td>{{quantity}}</td>
+                </tr>
+                <tr>
+                    <td>Итого</td>
+                    <td>{{total}} ₽</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            Спасибо за покупку!
+        </div>
+    </div>
+</body>
+</html>
